@@ -98,6 +98,12 @@ button:disabled{opacity:.55;cursor:not-allowed}
     <label for="otDate">วันที่</label>
     <input type="date" id="otDate">
 
+    <label style="display:flex;align-items:center;gap:9px;margin:14px 0 8px;cursor:pointer;font-weight:700">
+      <input type="checkbox" id="otSpecial" style="width:20px;height:20px;flex:0 0 auto;margin:0">
+      <span>เบิก OT กรณีพิเศษ / วันหยุด</span>
+    </label>
+    <div class="small" style="margin:-2px 0 10px 29px">สำหรับวันที่พนักงานเข้าทำงานในวันหยุดหรือวันพิเศษ แม้ทำงานจริงไม่ครบ 8 ชั่วโมง แต่ต้องมี Check In และ Check Out จริง และเวลาที่ขอต้องอยู่ภายในเวลาทำงานจริง</div>
+
     <div class="row">
       <div>
         <label for="otStartTime">เวลาเริ่ม</label>
@@ -131,7 +137,7 @@ button:disabled{opacity:.55;cursor:not-allowed}
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 <script>
 const LIFF_ID = '2011365656-1SybFGFB';
-const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxpoABFrLZ7BZQAZJHXZisTEVKZawmr3KFBs8-0GvmKENoNrsEv4dXyt6gfb6JqR4K7/exec';
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbz_oNCCIiv0iebNyHrglEtp6tmZDirxe3hhJzpaULFlzUKOJfI3rfH6o9S3L6ATASUK/exec';
 let idToken = '';
 
 async function initLiff() {
